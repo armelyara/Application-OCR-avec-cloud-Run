@@ -6,9 +6,6 @@ from flask import Flask, render_template, request
 from google.cloud.vision import Image, ImageAnnotatorClient
 import io
 
-#Service Account file in json(API KEY)
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'SERVICE ACCOUNT API KEY '
-
 #Initializing Flask app
 app = Flask(__name__)
 
